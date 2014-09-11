@@ -2535,3 +2535,3406 @@ Processing by ArticlesController#show as HTML
   [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
   Rendered articles/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:49:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 65ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:49:33 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:49:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:49:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:49:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:49:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:49:34 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:49:34 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:49:34 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 19:49:37 -0400
+
+AbstractController::ActionNotFound (The action 'new' could not be found for ArticlesController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 19:49:37 -0400
+
+AbstractController::ActionNotFound (The action 'new' could not be found for ArticlesController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.3ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:50:41 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:50:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:50:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:50:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:50:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:50:42 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:50:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:50:42 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:50:42 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 19:50:43 -0400
+Processing by ArticlesController#new as HTML
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template articles/new, application/new with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/wrahim/the_odin_project/blogger/app/views"
+):
+  actionview (4.1.5) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.5) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.5) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.5) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.5) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 19:51:24 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 19:51:26 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:54:09 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:09 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:09 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:09 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:10 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:54:29 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 53ms (Views: 52.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:29 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:29 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:29 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:54:30 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:55:37 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 49.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:37 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:37 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:37 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 19.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:38 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:55:55 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:55 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:55 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:55:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:55:55 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:56:03 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 24.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:03 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:03 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:03 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:56:56 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 50ms (Views: 49.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:56 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:56 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:56 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:56:57 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:01 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:01 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:01 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:01 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:02 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:43 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:43 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:43 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:43 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:53 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:53 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:53 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:53 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:54 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:55 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:55 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:55 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:55 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:55 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:55 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:57 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:57 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:57 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:57 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:57 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:57 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:57 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:57 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:57 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 42.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:58 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 19:58:59 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 44.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:12 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:00:13 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:13 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:13 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:13 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:13 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 45ms (Views: 45.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:00:14 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:00:55 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:06:32 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:06:32 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:06:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:06:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:06:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:06:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:06:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:06:32 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:06:32 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:06:34 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@article) do |f| %>
+    2: 	<ul>
+    3: 		<% @article.errors.full_messages.each do |error| %>
+    4: 			<li><%= error %></li>
+  app/views/articles/new.html.erb:1:in `_app_views_articles_new_html_erb___1699486318046461661_70068737474120'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (25.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:06:34 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for(@article) do |f| %>
+    2: 	<ul>
+    3: 		<% @article.errors.full_messages.each do |error| %>
+    4: 			<li><%= error %></li>
+  app/views/articles/new.html.erb:1:in `_app_views_articles_new_html_erb___1699486318046461661_17293360'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (5.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:08:08 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Create a new Article<h1>
+    2: 
+    3: <%= form_for(@article) do |f| %>
+    4: 	<ul>
+    5: 		<% @article.errors.full_messages.each do |error| %>
+    6: 			<li><%= error %></li>
+  app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___1699486318046461661_32632120'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:08:09 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Create a new Article<h1>
+    2: 
+    3: <%= form_for(@article) do |f| %>
+    4: 	<ul>
+    5: 		<% @article.errors.full_messages.each do |error| %>
+    6: 			<li><%= error %></li>
+  app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___1699486318046461661_32632120'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (5.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:08:09 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Create a new Article<h1>
+    2: 
+    3: <%= form_for(@article) do |f| %>
+    4: 	<ul>
+    5: 		<% @article.errors.full_messages.each do |error| %>
+    6: 			<li><%= error %></li>
+  app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___1699486318046461661_32632120'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (5.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:08:09 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Create a new Article<h1>
+    2: 
+    3: <%= form_for(@article) do |f| %>
+    4: 	<ul>
+    5: 		<% @article.errors.full_messages.each do |error| %>
+    6: 			<li><%= error %></li>
+  app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___1699486318046461661_32632120'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (5.8ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:08:09 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 1ms
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>Create a new Article<h1>
+    2: 
+    3: <%= form_for(@article) do |f| %>
+    4: 	<ul>
+    5: 		<% @article.errors.full_messages.each do |error| %>
+    6: 			<li><%= error %></li>
+  app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___1699486318046461661_32632120'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.4ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.6ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:09:22 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:22 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:22 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:22 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:09:28 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:28 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:28 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:28 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:09:29 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:30 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:09:39 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:10:15 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:15 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:15 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:15 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:15 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:15 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:15 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:15 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:15 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:10:16 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:16 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:16 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:16 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:17 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:10:18 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:18 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:18 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:18 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 27.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 56ms (Views: 55.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:19 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:10:49 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 22.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:10:50 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:10:51 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:11:44 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:11:45 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:11:49 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2014-09-10 20:11:50 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:11:52 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2014-09-10 20:11:53 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:11:55 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/1" for 127.0.0.1 at 2014-09-10 20:11:58 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:12:56 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 46ms (Views: 42.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-09-10 20:13:26 -0400
+
+AbstractController::ActionNotFound (The action 'create' could not be found for ArticlesController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-09-10 20:13:45 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTIqDwPzKGKtbMV/WbaM3icZiTYPfdt/W0QYIwuJYFY=", "article"=>{"title"=>"This is another sample article", "body"=>"The body of this sample article."}, "commit"=>"Create Article"}
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template articles/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/wrahim/the_odin_project/blogger/app/views"
+):
+  actionview (4.1.5) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.5) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.5) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.5) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.5) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-09-10 20:14:23 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTIqDwPzKGKtbMV/WbaM3icZiTYPfdt/W0QYIwuJYFY=", "article"=>{"title"=>"This is another sample article", "body"=>"The body of this sample article."}, "commit"=>"Create Article"}
+  Rendered articles/create.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:14:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:14:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:14:23 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:14:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:14:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:14:23 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:14:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:14:23 -0400
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-09-10 20:15:37 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTIqDwPzKGKtbMV/WbaM3icZiTYPfdt/W0QYIwuJYFY=", "article"=>{"title"=>"This is another sample article", "body"=>"The body of this sample article."}, "commit"=>"Create Article"}
+Completed 500 Internal Server Error in 0ms
+
+RuntimeError ():
+  app/controllers/articles_controller.rb:15:in `create'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (20.0ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (32.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:16:04 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:16:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:16:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:16:04 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:16:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:16:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:16:04 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:16:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:16:04 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:18:05 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:18:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:18:05 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:05 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:18:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:05 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:18:24 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:18:25 -0400
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:18:25 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:18:25 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:25 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:25 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:25 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:25 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:25 -0400
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:18:47 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:18:47 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:18:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:18:47 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:47 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:47 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:47 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:47 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:18:47 -0400
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-09-10 20:21:51 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTIqDwPzKGKtbMV/WbaM3icZiTYPfdt/W0QYIwuJYFY=", "article"=>{"title"=>"", "body"=>""}, "commit"=>"Create Article"}
+Completed 500 Internal Server Error in 0ms
+
+RuntimeError ():
+  app/controllers/articles_controller.rb:15:in `create'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-09-10 20:24:15 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTIqDwPzKGKtbMV/WbaM3icZiTYPfdt/W0QYIwuJYFY=", "article"=>{"title"=>"", "body"=>""}, "commit"=>"Create Article"}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError ():
+  app/controllers/articles_controller.rb:15:in `create'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.3ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.5ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-09-10 20:24:59 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTIqDwPzKGKtbMV/WbaM3icZiTYPfdt/W0QYIwuJYFY=", "article"=>{"title"=>"This is s another sample article", "body"=>"This is another sample article body."}, "commit"=>"Create Article"}
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError ():
+  app/controllers/articles_controller.rb:15:in `create'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-09-10 20:26:19 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTIqDwPzKGKtbMV/WbaM3icZiTYPfdt/W0QYIwuJYFY=", "article"=>{"title"=>"This is s another sample article", "body"=>"This is another sample article body."}, "commit"=>"Create Article"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-09-11 00:26:19.485476"], ["title", "This is s another sample article"], ["updated_at", "2014-09-11 00:26:19.485476"]]
+  [1m[36m (19.1ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 29ms
+
+ActionView::MissingTemplate (Missing template articles/create, application/create with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/wrahim/the_odin_project/blogger/app/views"
+):
+  actionview (4.1.5) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.5) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.5) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.5) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.5) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.5) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.5) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.5) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.5) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.1.5) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.5) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.5) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.5) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/wrahim/.rvm/rubies/ruby-2.0.0-p481/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-09-10 20:26:53 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTIqDwPzKGKtbMV/WbaM3icZiTYPfdt/W0QYIwuJYFY=", "article"=>{"title"=>"This is s another sample article", "body"=>"This is another sample article body."}, "commit"=>"Create Article"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "articles" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2014-09-11 00:26:53.120680"], ["title", "This is s another sample article"], ["updated_at", "2014-09-11 00:26:53.120680"]]
+  [1m[35m (12.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 20ms (ActiveRecord: 13.0ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2014-09-10 20:26:53 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered articles/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:26:53 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:26:53 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:26:53 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:26:53 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:26:53 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:26:53 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:26:53 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:26:53 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:26:55 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2014-09-10 20:26:57 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:26:58 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2014-09-10 20:26:59 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered articles/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:26:59 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:28:38 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-09-10 20:28:41 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTIqDwPzKGKtbMV/WbaM3icZiTYPfdt/W0QYIwuJYFY=", "article"=>{"title"=>"asdfasdfasdfasdfasdfasdfas", "body"=>"asdfasdfas"}, "commit"=>"Create Article"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)  [["body", "testttt"], ["created_at", "2014-09-11 00:28:41.589507"], ["title", "test"], ["updated_at", "2014-09-11 00:28:41.589507"]]
+  [1m[36m (18.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 22ms (ActiveRecord: 19.0ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2014-09-10 20:28:41 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered articles/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:28:41 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:28:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:28:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:28:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:28:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:28:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:28:41 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:28:41 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:28:44 -0400
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2014-09-10 20:29:11 -0400
+Processing by ArticlesController#new as HTML
+  Rendered articles/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-09-10 20:29:18 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTIqDwPzKGKtbMV/WbaM3icZiTYPfdt/W0QYIwuJYFY=", "article"=>{"title"=>"testing for blow up", "body"=>"body"}, "commit"=>"Create Article"}
+Completed 500 Internal Server Error in 1ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/articles_controller.rb:15:in `create'
+
+
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /home/wrahim/.rvm/gems/ruby-2.0.0-p481/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.2ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2014-09-10 20:32:31 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KTIqDwPzKGKtbMV/WbaM3icZiTYPfdt/W0QYIwuJYFY=", "article"=>{"title"=>"testing for blow up", "body"=>"body"}, "commit"=>"Create Article"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "articles" ("body", "created_at", "title", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "body"], ["created_at", "2014-09-11 00:32:31.167036"], ["title", "testing for blow up"], ["updated_at", "2014-09-11 00:32:31.167036"]]
+  [1m[35m (19.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/5
+Completed 302 Found in 24ms (ActiveRecord: 19.6ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2014-09-10 20:32:31 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered articles/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2014-09-10 20:32:31 -0400
+
+
+Started GET "/assets/screen.css?body=1" for 127.0.0.1 at 2014-09-10 20:32:31 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-10 20:32:31 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-10 20:32:31 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-10 20:32:31 -0400
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2014-09-10 20:32:31 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-10 20:32:31 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-10 20:32:31 -0400
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:32:34 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles/2" for 127.0.0.1 at 2014-09-10 20:32:35 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles"  WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2014-09-10 20:32:36 -0400
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms)

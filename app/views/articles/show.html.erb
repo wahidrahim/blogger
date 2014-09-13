@@ -1,5 +1,11 @@
 <h1><%= @article.title %></h1>
-<p><%= @article.body %></p>
+<p><%= @article.body %></p><br/>
+<p><b>Tags: </b>
+<% @article.tags.each do |tag| %>
+	<%= link_to tag.name, tag_path(tag.id) %>
+<% end %>
+</p><br/>
+
 <%= render partial: 'comments/form' %>
 <%= link_to "<< Back to Article list", articles_path %>
 <%= link_to "delete", article_path(@article.id), method: :delete, data: {confirm: "Are you sure you want to delete: #{@article.title}"} %>

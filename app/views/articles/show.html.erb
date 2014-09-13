@@ -4,11 +4,16 @@
 <% @article.tags.each do |tag| %>
 	<%= link_to tag.name, tag_path(tag.id) %>
 <% end %>
-</p><br/>
+</p>
+
+<br>
+
+<div id="back"><%= link_to "<< Back to Article list", articles_path %></div>
+<div id="edit"><%= link_to "edit", edit_article_path(@article.id) %></div>
+<div id="delete"><%= link_to "delete", article_path(@article.id), method: :delete, data: {confirm: "Are you sure you want to delete: #{@article.title}"} %></div>
+<br><br>
 
 <%= render partial: 'comments/form' %>
-<%= link_to "<< Back to Article list", articles_path %>
-<%= link_to "delete", article_path(@article.id), method: :delete, data: {confirm: "Are you sure you want to delete: #{@article.title}"} %>
-<%= link_to "edit", edit_article_path(@article.id) %>
+
 <h3><%= @article.comments.size %> comments</h3>
 <%= render partial: 'articles/comment', collection: @article.comments %>

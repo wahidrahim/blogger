@@ -1,4 +1,5 @@
 class TagsController < ApplicationController
+	before_filter :require_login, only: [:destroy]
 	# Instead of adding a deleting "feature" for tags
 	# tags automatically remove themselves if they are
 	# not associated with any articles

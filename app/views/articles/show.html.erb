@@ -1,6 +1,6 @@
 <h1><%= @article.title %></h1>
 <% if @article.image.exists? %>
-<p><%= image_tag @article.image.url %></p>
+	<p><%= image_tag @article.image.url %></p>
 <% end %>
 <p><%= @article.body %></p><br/>
 <p><b>Tags: </b>
@@ -12,8 +12,10 @@
 <br>
 
 <div id="back"><%= link_to "<< Back to Article list", articles_path %></div>
+<% if logged_in? %>
 <div id="edit"><%= link_to "edit", edit_article_path(@article.id) %></div>
 <div id="delete"><%= link_to "delete", article_path(@article.id), method: :delete, data: {confirm: "Are you sure you want to delete: #{@article.title}"} %></div>
+<% end %>
 
 <br><br>
 

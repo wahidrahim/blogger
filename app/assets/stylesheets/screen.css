@@ -652,6 +652,11 @@ div.field_with_errors input {
     border: 3px solid red;
 }
 
+p.comment_timestamp {
+	font-family: monospace;
+	color: #8996AD;
+}
+
 #back, #edit, #delete {
 	display: inline-block;
 }
